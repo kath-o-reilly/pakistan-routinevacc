@@ -2,7 +2,7 @@
 Code use for analysis of MICS data from Pakistan
 
 # Introduction
-For analysis of MICS data the availbale data first needs to be reformatted into a useable format, and secondly the actual analysis needs to be carried out. The formatting and analysis of the data was done mostly in R, with some additional analysis in STATA (code not provided). 
+For analysis of MICS data the availbale data first needs to be reformatted into a useable format, and secondly the actual analysis needs to be carried out. The formatting of the data was done mostly in _R_, including adjustment of the survey weights. Accounting for the survey weights is an important aspect of the study design. Currently there are not reliable packages within _R_ to deal with survey weights. The regression analysis was carried out in STATA, usng the _svy_ toolbox (https://www.stata.com/manuals13/svy.pdf). 
 
 ## Formatting of data from SPSS format to R
 
@@ -10,4 +10,6 @@ The code makes use of the R library _foreign_ which reads into R the SPSS files.
 
 ## Data analysis in R
 
-To account for the sampling weights within surveyed children, the package _survey_ was used. Essentially, the regression analysis is adapted to account for unequal sampling of surveyed individuals, in order to infer a population effect. Much more information about the approach can be found here http://r-survey.r-forge.r-project.org/survey/
+Comparing AFP and MICS data
+
+## Data analysis in STATA
